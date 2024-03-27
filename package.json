@@ -1,0 +1,17 @@
+{
+  "name": "get-platform-proxy-ai-stream",
+  "scripts": {
+    "worker": "wrangler dev src/worker.ts",
+    "node-script": "tsx src/node-script.ts"
+  },
+  "type": "module",
+  "private": "true",
+  "dependencies": {
+    "@cloudflare/ai": "^1.1.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240320.1",
+    "tsx": "^4.7.1",
+    "wrangler": "^3.38.0"
+  }
+}
